@@ -1,0 +1,35 @@
+\begin{tikzpicture}[scale=0.6, thick]
+	% Radius of the circle
+	\def\r{2}
+	
+	% Points of tangency on the circle
+	\coordinate (P) at (150:\r);
+	\coordinate (Q) at (30:\r);
+	\coordinate (D) at (90:\r);
+	
+	% Apex A at the top
+	\coordinate (A) at (0, 4.8);
+	
+	% Draw the circle
+	\draw (0,0) circle (\r cm);
+	
+	% Draw the main lines from A passing through P and Q extending downwards
+	\coordinate (Pext) at ($(A)!1.7!(P)$);
+	\coordinate (Qext) at ($(A)!1.7!(Q)$);
+	\draw (A) -- (Pext);
+	\draw (A) -- (Qext);
+	
+	% Draw the tangent line segment BC at the top of the circle passing through D
+	\coordinate (B) at (-1.33, \r);
+	\coordinate (C) at (1.35, \r);
+	\draw (B) -- (C);
+	
+	% Node labels
+	\node[above] at (A) {$A$};
+	\node[above left] at (B) {$B$};
+	\node[above right] at (C) {$C$};
+	\node[above] at (D) {$D$};
+	\node[left] at (P) {$P$};
+	\node[right] at (Q) {$Q$};
+	
+\end{tikzpicture}

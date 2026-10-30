@@ -1,0 +1,37 @@
+	\begin{tikzpicture}[scale=0.5, transform shape, thick]
+	% Define coordinates
+	\coordinate (O) at (0,0);
+	\coordinate (Q) at (0,4);
+	\coordinate (R) at (4,0);
+	\coordinate (P) at (4,4);
+	
+	% Draw the circle
+	\draw (O) circle (4cm);
+	
+	% Draw radius OQ with label
+	\draw (O) -- (Q) node[midway, left] {$4\text{ cm}$};
+	
+	% Draw dashed line from O to P
+	\draw[dashed] (O) -- (P);
+	
+	% Draw tangent lines meeting at P with arrows pointing outward
+	\draw[->] (P) -- (-3,4);
+	\draw[->] (P) -- (4,-3);
+	
+	% Right angle symbol at P
+	\draw (3.7,4) -- (3.7,3.7) -- (4,3.7);
+	
+	\pic [draw, "$45^\circ$", angle radius=10mm, angle eccentricity=1.4] {angle = Q--P--O};
+	% Draw points
+	\fill (O) circle (2.5pt);
+	\fill (Q) circle (2.5pt);
+	\fill (R) circle (2.5pt);
+	\fill (P) circle (2.5pt);
+	
+	% Node labels
+	\node[below left] at (O) {$O$};
+	\node[above right] at (Q) {$Q$};
+	\node[right] at (R) {$R$};
+	\node[above right] at (P) {$P$};
+	
+\end{tikzpicture}

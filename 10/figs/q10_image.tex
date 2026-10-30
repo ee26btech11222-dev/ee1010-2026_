@@ -1,0 +1,40 @@
+\begin{tikzpicture}[scale=0.6, thick]
+	% Define coordinates and radius
+	\coordinate (O) at (0,0);
+	\def\r{3} % radius of the circle
+	
+	% Points on the circle (angle AOB = 100°)
+	\coordinate (B) at (-75:\r);
+	\coordinate (A) at (185:\r);
+	
+	% Draw the circle
+	\draw (O) circle (\r cm);
+	
+	% Draw triangle OAB
+	\draw (O) -- (A) -- (B) -- cycle;
+	
+	% Tangent line at B (perpendicular to radius OB at -75°, line angle is 15° / 195°)
+	\coordinate (P) at ($(B) + (195:2.5)$);
+	\coordinate (Q) at ($(B) + (15:3.5)$);
+	\draw[<->] (P) -- (Q);
+	
+	% Tick marks on the tangent line near P and Q
+	\draw ($(P)+(105:0.12)$) -- ($(P)+(-75:0.12)$);
+	\draw ($(Q)+(105:0.12)$) -- ($(Q)+(-75:0.12)$);
+	
+	% Draw angle 100° at O
+	\pic [draw, "$100^\circ$", angle radius=5mm, angle eccentricity=1.4] {angle = A--O--B};
+	
+	% Fill points
+	\fill (O) circle (1.5pt);
+	\fill (A) circle (1.5pt);
+	\fill (B) circle (1.5pt);
+	
+	% Node labels
+	\node[above right] at (O) {$O$};
+	\node[left] at (A) {$A$};
+	\node[below right] at (B) {$B$};
+	\node[below] at (P) {$P$};
+	\node[below] at (Q) {$Q$};
+	
+\end{tikzpicture}

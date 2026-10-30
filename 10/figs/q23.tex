@@ -1,0 +1,44 @@
+	\begin{tikzpicture}[scale=0.6, thick]
+	% Define coordinates
+	\coordinate (A) at (0,0);
+	\coordinate (B) at (7,0);
+	\coordinate (C) at (7,4.2);  % Position for point C (Height of Pedestal)
+	\coordinate (D) at (7,6.0);  % Position for point D (Top of structure, 1.6 m above C)
+	
+	% Draw base line AB (blue)
+	\draw[blue] (A) -- (B);
+	
+	% Draw pedestal BC (dashed blue)
+	\draw[blue, dashed] (B) -- (C);
+	
+	% Draw structure CD (solid blue)
+	\draw[blue] (C) -- (D);
+	
+	% Draw lines of sight AC and AD (orange)
+	\draw[orange] (A) -- (C);
+	\draw[orange] (A) -- (D);
+	
+	% Right angle symbol at B
+	\draw (7,0.3) -- (6.7,0.3) -- (6.7,0);
+	
+	% Angle arcs and labels
+	\pic [draw, angle radius=1.2cm, "$45^\circ$"] {angle = B--A--C};
+	\pic [draw, angle radius=1.8cm, "$60^\circ$"] {angle = C--A--D};
+	
+	% Vertex labels
+	\node[below left] at (A) {$A$};
+	\node[below right] at (B) {$B$};
+	\node[above right] at (C) {$C$};
+	\node[above] at (D) {$D$};
+	
+	% Measurement and text labels
+	\node[right=2pt] at ($(C)!0.5!(D)$) {$1.6\text{ m}$};
+	\node[right=4pt, text width=2.5cm] at ($(B)!0.5!(C)$) {\small\itshape Height of Pedestal};
+	
+	% Draw points at vertices
+	\fill (A) circle (1.5pt);
+	\fill (B) circle (1.5pt);
+	\fill (C) circle (1.5pt);
+	\fill (D) circle (1.5pt);
+	
+\end{tikzpicture}

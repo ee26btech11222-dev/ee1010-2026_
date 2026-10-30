@@ -1,0 +1,26 @@
+	\begin{tikzpicture}[scale=0.6, transform shape, thick]
+	% Define coordinates for triangle ABC and parallel line segment DE
+	\coordinate (A) at (2.5, 4);
+	\coordinate (B) at (0, 0);
+	\coordinate (C) at (7, 0);
+	
+	\coordinate (D) at (1, 1.6);
+	\coordinate (E) at (5.2, 1.6);
+	
+	% Draw the main triangle ABC
+	\draw (A) -- (B) -- (C) -- cycle;
+	
+	% Draw the parallel line segment DE
+	\draw (D) -- (E);
+	
+	% Node labels for vertices and points
+	\node[above] at (A) {$A$};
+	\node[below left] at (B) {$B$};
+	\node[below right] at (C) {$C$};
+	\node[left] at (D) {$D$};
+	\node[right] at (E) {$E$};
+	
+	% Label for segment AE
+	\node[above right] at ($(A)!0.5!(E)$) {$2.7\text{ cm}$};
+	
+\end{tikzpicture}

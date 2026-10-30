@@ -1,0 +1,52 @@
+\begin{tikzpicture}[scale=0.6, thick]
+	% Define coordinates
+	\coordinate (A) at (0,0);
+	\coordinate (O) at (3,0);
+	\coordinate (B) at (6,0);
+	\coordinate (D) at (3,3);
+	\coordinate (C) at (9,3);
+	
+	% Shaded Region 1: Triangle AOD
+	\fill[pattern=north east lines, pattern color=black] (A) -- (O) -- (D) -- cycle;
+	
+	% Shaded Region 2: Bounded by arc BD, line DC, and line CB
+	\fill[pattern=north east lines, pattern color=black] (D) -- (C) -- (B) arc[start angle=0, end angle=90, radius=3] -- cycle;
+	
+	% Draw the semicircle with center O and radius 3 (diameter AB = 6, scaled proportionally)
+	\draw (A) arc[start angle=180, end angle=0, radius=3];
+	
+	% Draw base line from A to C
+	\draw (A) -- (B);
+	
+	% Draw segment OD (dashed)
+	\draw[dashed] (O) -- (D);
+	
+	% Draw segment AD
+	\draw (A) -- (D);
+	
+	% Draw segment DC
+	\draw (D) -- (C);
+	
+	% Draw segment BC
+	\draw (B) -- (C);
+	
+	% Dimension bracket for 12 at the bottom
+	%	\draw ($(A)+(0,-0.4)$) -- ($(A)+(0,-0.6)$);
+	%	\draw ($(C)+(0,-0.4)$) -- ($(C)+(0,-0.6)$);
+	\draw[<->] ($(A)+(0,-0.5)$) -- node[below] {$12$} ($(B)+(0,-0.5)$);
+	
+	% Fill vertex points
+	\fill (A) circle (1.5pt);
+	\fill (O) circle (1.5pt);
+	\fill (B) circle (1.5pt);
+	\fill (D) circle (1.5pt);
+	\fill (C) circle (1.5pt);
+	
+	% Node labels
+	\node[below] at (A) {$A$};
+	\node[below] at (O) {$O$};
+	\node[below] at (B) {$B$};
+	\node[above] at (D) {$D$};
+	\node[above] at (C) {$C$};
+	
+\end{tikzpicture}
