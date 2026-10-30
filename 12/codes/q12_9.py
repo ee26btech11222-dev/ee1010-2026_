@@ -1,9 +1,4 @@
-import numpy as np
 from sympy import Eq, Symbol, solve
-import sys
-sys.path.append('.')
-
-from CoordGeo.matrix.funcs import *
 
 # det_A: determinant of matrix A, |A|
 n = 3
@@ -17,9 +12,10 @@ equation = Eq(det_A**2, (3**n) * det_A)
 # Solve for |A|
 solutions = solve(equation, det_A)
 
-non_zero_sol = []
+non_zero_sol= []
 for sol in solutions:
     if (sol != 0):
         non_zero_sol.append(sol)
 
 print(f"The value of |A| is: {non_zero_sol}")
+

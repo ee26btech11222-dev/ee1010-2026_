@@ -1,19 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-import sys
-sys.path.append('.')
-
-from CoordGeo.line.funcs import line_gen
 
 # Points & Circle setup
 R = 2
 O, B = np.array([0, 0]), np.array([0, -R])
 A = np.array([R * np.cos(np.radians(-190)), R * np.sin(np.radians(-190))])
 
+
+
 # 1. Circle & Tangent Line
 plt.gca().add_patch(plt.Circle(O, R, color='black', fill=False, lw=1.5))
-plt.annotate('_', xy=(3, -R), xytext=(-3, -R), arrowprops=dict(lw=0.5))
+plt.annotate('_', xy=(3, -R), xytext=(-3, -R),arrowprops=dict(lw=0.5))
 
 # 2. Triangle Lines (OA, OB, AB)
 plt.plot([O[0], A[0], B[0], O[0]], [O[1], A[1], B[1], O[1]])
@@ -37,6 +35,4 @@ plt.axis('off')
 plt.tight_layout()
 plt.show()
 plt.savefig("q2.jpg")
-image_path = "q2.jpg"
-
-os.system(f"termux-open '{image_path}'")
+image_path=

@@ -1,10 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import os
-import sys
-sys.path.append('.')
-
-from CoordGeo.line.funcs import line_gen
+import os 
 
 # f(x) = (x - 1) / (x * (x^2 - 1)) 
 
@@ -17,18 +13,18 @@ def f(x):
     return 1 / (x * (x + 1))
 
 # Plot continuous branches
-plt.plot(x1, f(x1), color='black')
-plt.plot(x2, f(x2), color='black')
-plt.plot(x3, f(x3), color='black')
-plt.ylim(-10, 10)
+plt.plot(x1, f(x1),color='black')
+plt.plot(x2, f(x2),color='black')
+plt.plot(x3, f(x3),color='black')
+plt.ylim(-10,10)
 
-# Point of discontinuity at x=1
-plt.scatter([1], [0.5], color='red', edgecolor='black')
+#there is a point of discontinuity at x=1
+plt.scatter([1],[0.5],color='red',edgecolor='black')
 plt.xlabel('x', fontsize=12)
 plt.ylabel('f(x)', fontsize=12)
 plt.title(r'Graph of $f(x) = \frac{x-1}{x(x^2-1)}$')
 plt.grid(True)
 plt.show()
 plt.savefig("q4.jpg")
-image_path = "q4.jpg"
+image_path="q4.jpg"
 os.system(f"termux-open '{image_path}'")

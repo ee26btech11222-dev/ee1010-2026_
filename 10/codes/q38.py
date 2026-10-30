@@ -1,11 +1,6 @@
 import numpy as np
 import os
 import matplotlib.pyplot as plt
-import sys
-sys.path.append('.')
-
-from CoordGeo.line.funcs import line_gen
-from CoordGeo.conics.funcs import *
 
 # Define range for x and polynomial p(x)
 x = np.linspace(-3, 3, 500)
@@ -39,5 +34,5 @@ plt.grid(True)
 plt.show()
 plt.savefig("q38.jpg")
 
-image_path = "q38.jpg"
+image_path="q38.jpg"
 os.system(f"termux-open '{image_path}'")

@@ -1,10 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import os 
-import sys
-sys.path.append('.')
-
-from CoordGeo.line.funcs import line_gen
 
 # Take value of k as user input
 k = float(input("Enter the value of k: "))
@@ -13,14 +9,12 @@ k = float(input("Enter the value of k: "))
 x = np.linspace(-5, 5, 1000)
 y = 2 * (x**2) + k * x + 2
 
-# Generate coordinate matrix using CoordGeo
-pts = line_gen(np.vstack((x, y))[:, :-1], np.vstack((x, y))[:, 1:])
-
 # Create plot
-plt.ylim(-10, 10)
-plt.plot(x, y, color="red")
+plt.ylim(-10,10)
+plt.plot(x, y,color="red")
 
 # Reference x and y axes
+
 
 # Formatting
 plt.title(f'Graph of Quadratic Equation for $k = {k}$')
@@ -30,6 +24,6 @@ plt.grid(True)
 
 plt.show()
 plt.savefig("q1.jpg")
-image_path = "q1.jpg"
+image_path="q1.jpg"
 
 os.system(f"termux-open '{image_path}'")
