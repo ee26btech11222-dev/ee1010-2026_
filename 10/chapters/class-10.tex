@@ -92,11 +92,13 @@
 	
 	distance between two points $(x_1,y_1); (x_2,y_2)$ is 
 	\begin{align}
-		\sqrt{(x_2-x_1)^2 +(y_2-y_1)^2}    
+		d=\sqrt{\vec{x}^T\vec{x}}
 	\end{align}
 	
-	
-	distance $\sqrt{4m^2+4n^2}\implies 2\sqrt{m^2+n^2}$
+	$\vec{x}=\begin{bmatrix}
+		2m \\ -2n \end{bmatrix}$
+		
+	distance $d = \sqrt{4m^2+4n^2}\implies 2\sqrt{m^2+n^2}$
 	
 		\begin{align}
 		\textbf{codes/q4.c}
@@ -833,11 +835,11 @@
 	\end{center}
 	let distance from point to lower point of pedestal be x ; 
 	
-	$tan 45^\circ = \frac{BC}{AB}=BC=AB $
+	$tan 45^\circ = \frac{BC}{AB}=BC=AB=x $
 	
-	$tan 60^\circ= \frac{BD}{AB}=\sqrt{3}\implies AB =\frac{1.6}{\sqrt{3}}$
+	$tan 60^\circ= \frac{BD}{AB}=\sqrt{3}\implies \frac{x+1.6}{x}=\sqrt{3}$
 	
-	height of pedestal =$\frac{1.6}{\sqrt{3}}$
+	height of pedestal =x=$\frac{1.6}{\sqrt{3}-1}=0.8(\sqrt{3}+1)$
 	\item 
 	
 	Show that the points $(7, 10)$, $(-2, 5)$ and $(3, -4)$ are vertices of an isosceles right triangle.   
@@ -892,7 +894,9 @@
 	
 	\textbf{solution :}
 	
-	$P(x)= Q(x)Y(x)+R(x) \implies p(x)=2x^3-3x^2+6x+7$ 
+	\begin{align}
+		P(x)= Q(x)Y(x)+R(x) \implies p(x)=2x^3-3x^2+6x+7
+	\end{align}
 	
 	$Y(x)= x^2-4x+8  \implies R(x)= 10x-33$
 	
@@ -989,12 +993,14 @@
 	\solution
 	
 	
-	\begin{itemize}
-		\item Radius of the cylindrical vessel ($R$) = $10\text{ cm}$
-		\item Number of spherical balls ($n$) = $9000$
-		\item Radius of each spherical ball ($r$) = $0.5\text{ cm} = \frac{1}{2}\text{ cm}$
-		\item Let the rise in the water level be $h\text{ cm}$.
-	\end{itemize}
+
+		Radius of the cylindrical vessel ($R$) = $10\text{ cm}$
+		
+		Number of spherical balls ($n$) = $9000$
+		
+		 Radius of each spherical ball ($r$) = $0.5\text{ cm} = \frac{1}{2}\text{ cm}$
+		
+		Let the rise in the water level be $h\text{ cm}$.
 	
 	\subsection*{Formulae}
 	\begin{enumerate}
@@ -1052,28 +1058,28 @@
 	In $\Delta ABC$, a line $DE$ is drawn parallel to side $BC$ ($DE \parallel BC$), intersecting $AB$ at $D$ and $AC$ at $E$.
 	
 	\subsubsection*{2. To Prove}
-	\[
-	\frac{AD}{DB} = \frac{AE}{EC}
-	\]
-	
-	\subsubsection*{3. Construction}
-	\begin{itemize}
-		
-		\item Join $B$ to $E$ and $C$ to $D$.
-		
-		\item  Draw $DM \perp AC$ (perpendicular from $D$ to $AC$).
-		
-		\item Draw $EN \perp AB$ (perpendicular from $E$ to $AB$).\end{itemize} 
+	\begin{align}
+		\frac{AD}{DB} = \frac{AE}{EC}
+	\end{align}
 	
 	
-	\subsubsection*{4. Step-by-Step Derivation}
+
+
+		
+		Join $B$ to $E$ and $C$ to $D$.
+		
+		  Draw $DM \perp AC$ (perpendicular from $D$ to $AC$).
+		
+		 Draw $EN \perp AB$ (perpendicular from $E$ to $AB$)
+	
+	\subsubsection*{3. Step-by-Step Derivation}
 	
 	
 	
 	1. Calculate the area of $\Delta ADE$ considering $AD$ as the base:
-	\[
+	\begin{align}
 	\text{Area}(\Delta ADE) = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times AD \times EN
-	\]
+	\end{align}
 	
 	2. Calculate the area of $\Delta BDE$ considering $BD$ as the base:
 	\begin{align}
@@ -1093,13 +1099,13 @@
 	
 	
 	5. Relate the areas of $\Delta BDE$ and $\Delta DEC$:
-	\begin{itemize}
-		\item Both $\Delta BDE$ and $\Delta DEC$ lie on the same base $DE$ and between the same parallel lines $DE$ and $BC$.
-		\item Since triangles on the same base and between the same parallels are equal in area:
-		\[
+	
+		 Both $\Delta BDE$ and $\Delta DEC$ lie on the same base $DE$ and between the same parallel lines $DE$ and $BC$.
+		
+		Since triangles on the same base and between the same parallels are equal in area:
+		\begin{align}
 		\text{Area}(\Delta BDE) = \text{Area}(\Delta DEC) \quad \text{--- (Equation 3)}
-		\]
-	\end{itemize}
+		\end{align}
 	
 	
 	\begin{itemize}
@@ -1111,7 +1117,7 @@
 	\end{itemize}
 	
 	
-	\textbf{Hence Proved.}
+	
 	
 	
 	
