@@ -608,7 +608,11 @@ $\frac{y}{x}=t \implies \frac{xdy-y}{x^2} =dt$
 
 $tan^{-1}t=\frac{1}{2}(2logx +log(1+t^2)) \implies \frac{1}{1+ t^2}dt= \frac{1}{x}+\frac{tdt}{1+t^2}$
 
-$$\frac{1-t}{1+t^2}dt =\frac{1}{x}$$  $$\frac{x(x-y)}{x^2+y^2}\left(\frac{x\frac{dy}{dx}-y}{x^2}\right)=\frac{1}{x}$$ $$\frac{dy}{dx}= \frac{x+y}{x-y}$$
+$$\frac{1-t}{1+t^2}dt =\frac{1}{x}$$  $$\frac{x(x-y)}{x^2+y^2}\left(\frac{x\frac{dy}{dx}-y}{x^2}\right)=\frac{1}{x}$$
+\begin{align}
+	x\frac{dy}{dx}-y=\frac{x^2+y^2}{x-y}
+\end{align}
+$$\frac{dy}{dx}= \frac{x+y}{x-y}$$
 
 \begin{center}
     or 
@@ -619,11 +623,16 @@ If $y=e^{a~cos^{-1}x},-1<x<1$, then show that $(1-x^{2})\frac{d^{2}y}{dx^{2}}-x\
 
 \solution
 
-$\frac{dy}{dx}=-e^{a cos^{-1}x}a(\frac{1}{\sqrt{1-x^2}}) $$\frac{dy}{dx}= \frac{-ay}{\sqrt{1-x^2}} \implies \sqrt{1-x^2}\frac{dy}{dx}= -ay$
+$\frac{dy}{dx}=-e^{a cos^{-1}x}a(\frac{1}{\sqrt{1-x^2}}) \implies$ $\frac{dy}{dx}= \frac{-ay}{\sqrt{1-x^2}} \implies \sqrt{1-x^2}\frac{dy}{dx}= -ay$
 
-$$(1-x^2)(\frac{dy}{dx})^2=a^2y^2$$  $$2\frac{d^2y}{dx^2}(\frac{-ay}{\sqrt{1-x^2}})(1-x^2)-2x\frac{a^2y^2}{1-x^2}= 2a^2y(\frac{-ay}{\sqrt{1-x^2}}) $$
 
-$$(1-x^{2})\frac{d^{2}y}{dx^{2}}-x\frac{dy}{dx}-a^{2}y=0$$
+$$(1-x^2)(\frac{dy}{dx})^2=a^2y^2$$ 
+$$2\frac{d^2y}{dx^2}\frac{dy}{dx}(1-x^2)-2x\left(\frac{dy}{dx}\right)^2=a^2y^2$$ \begin{align}
+	2\frac{d^2y}{dx^2}(\frac{-ay}{\sqrt{1-x^2}})(1-x^2)-2x\frac{a^2y^2}{1-x^2}= 2a^2y(\frac{-ay}{\sqrt{1-x^2}}) \end{align}
+$$ (1-x^2)\frac{d^2y}{dx^2}-x\left(\frac{-ay}{\sqrt{1-x^2}}\right)=a^2y$$
+\begin{align}
+	(1-x^{2})\frac{d^{2}y}{dx^{2}}-x\frac{dy}{dx}-a^{2}y=0
+\end{align}
 
 \item 
 
@@ -644,7 +653,7 @@ Differentiating with respect to $r$:
 \frac{dS}{dr} &= 2\pi r - \frac{250\pi}{r^2}
 \end{align}
 
-from\eqref{eq:ee26btech11222-prob 30}
+from \eqref{eq:ee26btech11222-prob 30}
 
 $$\frac{dS}{dr} = 0$$:
 \begin{align}
@@ -779,10 +788,13 @@ C_{21} &= -2, \quad C_{22} = 10, \quad C_{23} = 5 \\
 C_{31} &= -17, \quad C_{32} = -17, \quad C_{33} = 17
 \end{align*}
 
-\begin{align*}
-\text{Adj}(A) &= \begin{pmatrix} 28 & -2 & -17 \\ 13 & 10 & -17 \\ -19 & 5 & 17 \end{pmatrix} \\
+\begin{align}
+\text{Adj}(A) &= \begin{pmatrix} 28 & -2 & -17 \\ 13 & 10 & -17 \\ -19 & 5 & 17 \end{pmatrix} 
+\end{align}
+From \eqref{eq:ee26btech11222-prob-34 }
+\begin{align}
 A^{-1} &= \frac{1}{|A|} \text{Adj}(A) = \frac{1}{51} \begin{pmatrix} 28 & -2 & -17 \\ 13 & 10 & -17 \\ -19 & 5 & 17 \end{pmatrix}
-\end{align*}
+\end{align}
 
 The matrix equation is $AX = B$, where $X = \begin{pmatrix} x \\ y \\ z \end{pmatrix}$ and $B = \begin{pmatrix} 5 \\ 2 \\ -1 \end{pmatrix}$.
 \begin{align*}
