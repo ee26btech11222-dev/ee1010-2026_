@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.30)  10 NOV 2026 00:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.30)  10 NOV 2026 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1487,7 +1487,12 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \openout6 = `main.toc'.
 
  [3]
-(./10/Formulae/class-10-formulae.tex) (./10/chapters/class-10.tex [4
+(./10/Formulae/class-10-formulae.tex) (./10/chapters/class-10.tex
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 29--30
+[][][][][]  
+ []
+
+[4
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
@@ -1495,7 +1500,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.56 			\item
-              3]
+              3] [5]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1507,24 +1512,39 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
 <to be read again> 
                    \relax 
 l.96 	\end{align}
-                  [5] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (3.61406pt too wide) in paragraph at lines 908--918
+                 
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 104--105
+[][][][][]  
+ []
+
+[6] [7]
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 310--311
+[][][][][]  
+ []
+
+[8] [9] [10] [11] [12] [13]
+Overfull \hbox (65.19952pt too wide) in paragraph at lines 888--889
+[][][][][]  
+ []
+
+
+Overfull \hbox (3.61406pt too wide) in paragraph at lines 907--917
 [][] 
  []
 
 
-Overfull \hbox (20.19478pt too wide) in paragraph at lines 923--937
+Overfull \hbox (20.19478pt too wide) in paragraph at lines 922--936
  [] 
  []
 
-[13]
-Overfull \hbox (4.94333pt too wide) detected at line 983
+[14]
+Overfull \hbox (4.94333pt too wide) detected at line 982
 [] \OT1/cmr/m/n/10 = 100 + [] \OMS/cmsy/m/n/10 ^^B \OT1/cmr/m/n/10 40 = 100 + [
 ] = 100 + [] = 100 + 26\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 25 = 126\OML/cmm/m/it/
 10 :\OT1/cmr/m/n/10 25
  []
 
-[14] [15]) [16] (./12/Formulae/class_12_formulae_1.tex
+[15] [16]) [17] (./12/Formulae/class_12_formulae_1.tex
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1560,19 +1580,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.6.1}
 <to be read again> 
                    \relax 
 l.34  \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.10.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50  \end{align}
-                  [17]) (./12/chapters/class-12_2.tex
+                  [18]) (./12/chapters/class-12_2.tex
 pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.31 \end{align}
-                 [18]
+                 [19]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1}
 ) has been already used, duplicate ignored
 <to be read again> 
@@ -1585,54 +1599,54 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
                    \relax 
 l.92 \end{align}
                 
-<12/figs/q3.jpg, id=315, 462.528pt x 346.896pt>
+<12/figs/q3.jpg, id=325, 462.528pt x 346.896pt>
 File: 12/figs/q3.jpg Graphic file (type jpg)
 <use 12/figs/q3.jpg>
 Package pdftex.def Info: 12/figs/q3.jpg  used on input line 98.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
- [19]
-<12/figs/q4.jpg, id=331, 462.528pt x 346.896pt>
+ [20]
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 102--103
+[][][][][]  
+ []
+
+<12/figs/q4.jpg, id=340, 462.528pt x 346.896pt>
 File: 12/figs/q4.jpg Graphic file (type jpg)
 <use 12/figs/q4.jpg>
 Package pdftex.def Info: 12/figs/q4.jpg  used on input line 123.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
- [20 <./12/figs/q3.jpg>]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.4.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.151 \end{align}
-                  [21 <./12/figs/q4.jpg>]
+[21 <./12/figs/q3.jpg> <./12/figs/q4.jpg>]
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 128--129
+[][][][][]  
+ []
+
+
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 150--151
+[][][][][]  
+ []
+
+
 pdfTeX warning (ext4): destination with the same identifier (name{equation.8.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.214 \end{align}
-                 
+                  [22]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.9.1}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.238 \end{align}
                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.9.2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.244 \end{align}
-                  [22]
-pdfTeX warning (ext4): destination with the same identifier (name{equation.12.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.287 \end{align}
-                 
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 243--244
+[][][][][]  
+ []
+
+
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 286--287
+[][][][][]  
+ []
+
+[23]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.14.1
 }) has been already used, duplicate ignored
 <to be read again> 
@@ -1644,49 +1658,53 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.15.1
 <to be read again> 
                    \relax 
 l.347 \end{align}
-                  [23]
+                 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.16.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.359 \end{align}
-                 
+                  [24]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.380 \end{align}
                  
-<12/figs/q18.jpg, id=400, 462.528pt x 346.896pt>
+<12/figs/q18.jpg, id=421, 462.528pt x 346.896pt>
 File: 12/figs/q18.jpg Graphic file (type jpg)
 <use 12/figs/q18.jpg>
 Package pdftex.def Info: 12/figs/q18.jpg  used on input line 385.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
- [24] [25 <./12/figs/q18.jpg>] [26] [27]
+
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 389--390
+[][][][][]  
+ []
+
+[25 <./12/figs/q18.jpg>] [26] [27]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.31.1
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.614 \end{align}
-                 
+                  [28]
 pdfTeX warning (ext4): destination with the same identifier (name{equation.31.2
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.631 ...^2y(\frac{-ay}{\sqrt{1-x^2}}) \end{align}
-                                                   [28] [29]
-<12/figs/q33.jpg, id=465, 462.528pt x 346.896pt>
+                                                   [29]
+<12/figs/q33.jpg, id=477, 462.528pt x 346.896pt>
 File: 12/figs/q33.jpg Graphic file (type jpg)
 <use 12/figs/q33.jpg>
 Package pdftex.def Info: 12/figs/q33.jpg  used on input line 715.
 (pdftex.def)             Requested size: 254.9356pt x 191.20625pt.
+ [30]
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 719--720
+[][][][][]  
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.33.1
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.720 \end{align}
-                  [30 <./12/figs/q33.jpg>]
+
 Overfull \hbox (22.95459pt too wide) detected at line 750
 []\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 4\OML/cmm/m/it/10 ABC\OT1/cmr/m/n/10 ) = []
 \OML/cmm/m/it/10 AB \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x \OMS/cmsy/m/n/10 2 \OT1
@@ -1695,7 +1713,12 @@ Overfull \hbox (22.95459pt too wide) detected at line 750
 m/it/10 ; \OT1/cmr/m/n/10 6]) \OMS/cmsy/m/n/10 ^^@ []\OML/cmm/m/it/10 AC[] 
  []
 
-[31] [32] [33]) [34] (./main.aux)
+[31 <./12/figs/q33.jpg>] [32]
+Overfull \hbox (29.19977pt too wide) in paragraph at lines 806--807
+[][][][][]  
+ []
+
+[33] [34]) [35] (./main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -1704,13 +1727,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4CCA5C82B86F57AACC9BDD51731367E7;654.
  ) 
 Here is how much of TeX's memory you used:
- 54588 strings out of 467533
- 1310068 string characters out of 5422137
- 1945603 words of memory out of 5000000
- 82437 multiletter control sequences out of 15000+600000
+ 54871 strings out of 467533
+ 1312386 string characters out of 5422137
+ 1947603 words of memory out of 5000000
+ 82701 multiletter control sequences out of 15000+600000
  663157 words of font info for 109 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 99i,14n,118p,1194b,1330s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,14n,118p,1194b,1336s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
@@ -1727,10 +1750,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (34 pages, 780490 bytes).
+Output written on main.pdf (35 pages, 781737 bytes).
 PDF statistics:
- 630 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
- 286 named destinations out of 1000 (max. 500000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 305 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 
