@@ -594,7 +594,7 @@ normal vector of plane 1 i.e, $(2,-1,1)$ lies on plane 2
 
 dr be the normal vector of plane 2
 
-$$dr_1 = (2,-1,2); dr_2= (2,-1,1)$$  $$dr=dr_1 \times {dr_2 } \implies (1,2,0)$$
+$$dr_1 = \begin{pmatrix} 2 \\ -1\\2\end{pmatrix}; dr_2= \begin{pmatrix} 2\\-1\\1 \end{pmatrix} $$  $$dr=dr_1 \times {dr_2 } \implies \begin{pmatrix}1\\2\\0\end{pmatrix}$$
 
 $1(x-1) +2(y)+0(z+2) =0 \implies x+2y=1$
 
@@ -686,18 +686,54 @@ Using integration, find the area lying above x-axis and included between the cir
 
 \solution 
 
+intersection of two conics is defined as
+\begin{align}
+	\vec{x}^{\top}\brak{\vec{V}_1 + \mu\vec{V}_2}\vec{x}+2 \brak{\vec{u}_1+\mu \vec{u}_2}^{\top} \vec{x} 
+	+ \brak{f_1+\mu f_2}= 0
+	\label{eq:pair-mat-sing-conic}
+\end{align}
 
-$\text{Circle equation: } x^2 + y^2 = 8x \implies (x-4)^2 + y^2 = 16 \quad \text{(Center: }(4,0), \text{Radius: } 4) \\
-\text{Parabola equation: } y^2 = 4x$
+\eqref{eq:pair-mat-sing-conic-det} represents pair of staright lines if 
+\begin{align}	
+	\mydet{\vec{V}_1 + \mu\vec{V}_2 & \vec{u}_1+\mu \vec{u}_2\\ \brak{\vec{u}_1+\mu \vec{u}_2}^{\top} & f_1 + \mu f_2} &= 0
+\end{align}
+
+for circle ,
+\begin{align}
+	 \vec{V}_1 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix}, \quad
+	\vec{u}_1 = \begin{pmatrix} -4 \\ 0 \end{pmatrix}, \quad
+	f_1 = 0
+\end{align}
+for $y^2 = 4x$
+\begin{align}
+	\vec{V}_2 = \begin{bmatrix} 0 & 0 \\ 0 & 1 \end{bmatrix}, \quad
+	\vec{u}_2 = \begin{pmatrix} -2 \\ 0 \end{pmatrix}, \quad
+	f_2 = 0
+\end{align}
+
+$$\mydet{1 & 0& -4-2\mu \\ 0&1+\mu& 0 \\ -4-2\mu & 0& 0 }=0$$
+
+$$\implies (4+2\mu)^2(1+\mu)=0$$
+
+substituting the $\mu$ values in first equation gives 
+
+for $\mu = -2$
+$$
+	\vec{x}^{\top}\begin{bmatrix} 1&0\\ 0 & -1 \end{bmatrix} \vec{x} =0 
+$$
+
+$$ x = \pm y$$
+
+for $\mu = -1$
+
+$$
+\vec{x}^{\top}\begin{bmatrix} 1&0\\ 0 & -1 \end{bmatrix} \vec{x} + 2 \begin{bmatrix} -2 & 0 \end{bmatrix} \vec{x} =0 
+$$
+
+$$ x=0,x=4$$
 
 
-Substitute $y^2 = 4x$ into the circle equation to find intersection points:
 
-$x^2 + 4x = 8x \\
-x^2 - 4x = 0 \implies x(x-4) = 0 \\
-x = 0 \text{ or } x = 4$
-
-For $x = 0, y = 0$, and for $x = 4, y = \pm 4$.
 
 The required area above the $x$-axis is split into two regions:
 1. From $x = 0$ to $x = 4$, bounded by the parabola $y = 2\sqrt{x}$.
@@ -774,6 +810,64 @@ $2x+3y+5z=2$\newline
 $5x-2y+6z=-1$
 
 \solution 
+$A= \myvec{5&-1&4\\ 2&3&5\\ 5&-2&6}$ and $B= \myvec{5 \\ 2 \\ -1}$
+
+
+
+$$
+[A \mid B] = \left[ \begin{array}{ccc|c}
+	5 & -1 & 4 & 5 \\
+	2 & 3 & 5 & 2 \\
+	5 & -2 & 6 & -1
+\end{array} \right]
+$$
+
+Apply $R_2 \rightarrow 5R_2 - 2R_1$ and $R_3 \rightarrow R_3 - R_1$:
+$$ \left[ \begin{array}{ccc|c}
+	5 & -1 & 4 & 5 \\
+	0 & 17 & 17 & 0 \\
+	0 & -1 & 2 & -6
+\end{array} \right]
+$$
+
+Apply $R_2 \rightarrow \frac{1}{17}R_2$:
+$$
+\left[ \begin{array}{ccc|c}
+	5 & -1 & 4 & 5 \\
+	0 & 1 & 1 & 0 \\
+	0 & -1 & 2 & -6
+\end{array} \right]
+$$
+
+
+Apply $R_3 \rightarrow R_3 + R_2$:
+\begin{align}
+	\left[ \begin{array}{ccc|c}
+		5 & -1 & 4 & 5 \\
+		0 & 1 & 1 & 0 \\
+		0 & 0 & 3 & -6
+	\end{array} \right]
+\end{align}
+
+
+$$3z = -6 \implies z = -2$$
+
+
+Substitute $z = -2$ into the second row:
+$$
+y + z = 0 \implies y + (-2) = 0 \implies y = 2
+$$
+
+Substitute $y = 2$ and $z = -2$ into the first row:
+$$
+5x - y + 4z = 5 \implies 5x - 2 + 4(-2) = 5 \implies 5x - 10 = 5 \implies 5x = 15 \implies x = 3
+$$
+
+
+
+$$x = 3 , y = 2 , z = -2$$
+
+\textbf{Another solution:}
 
 \begin{align*}
 |A| &= 5(18 - (-10)) - (-1)(12 - 25) + 4(-4 - 15) \\
@@ -802,64 +896,9 @@ X &= A^{-1}B = \frac{1}{51} \begin{pmatrix} 28(5) - 2(2) - 17(-1) \\ 13(5) + 10(
 &= \frac{1}{51} \begin{pmatrix} 140 - 4 + 17 \\ 65 + 20 + 17 \\ -95 + 10 - 17 \end{pmatrix} = \frac{1}{51} \begin{pmatrix} 153 \\ 102 \\ -102 \end{pmatrix} = \begin{pmatrix} 3 \\ 2 \\ -2 \end{pmatrix}
 \end{align*}
 
-\textbf{Another solution using gauss elimination:}
-
-$A= \myvec{5&-1&4\\ 2&3&5\\ 5&-2&6}$ and $B= \myvec{5 \\ 2 \\ -1}$
 
 
 
-$$
-[A \mid B] = \left[ \begin{array}{ccc|c}
-5 & -1 & 4 & 5 \\
-2 & 3 & 5 & 2 \\
-5 & -2 & 6 & -1
-\end{array} \right]
-$$
-
-Apply $R_2 \rightarrow 5R_2 - 2R_1$ and $R_3 \rightarrow R_3 - R_1$:
-$$ \left[ \begin{array}{ccc|c}
-5 & -1 & 4 & 5 \\
-0 & 17 & 17 & 0 \\
-0 & -1 & 2 & -6
-\end{array} \right]
-$$
-
-Apply $R_2 \rightarrow \frac{1}{17}R_2$:
-$$
- \left[ \begin{array}{ccc|c}
-5 & -1 & 4 & 5 \\
-0 & 1 & 1 & 0 \\
-0 & -1 & 2 & -6
-\end{array} \right]
-$$
-
-
-Apply $R_3 \rightarrow R_3 + R_2$:
-\begin{align}
- \left[ \begin{array}{ccc|c}
-5 & -1 & 4 & 5 \\
-0 & 1 & 1 & 0 \\
-0 & 0 & 3 & -6
-\end{array} \right]
-\end{align}
-
-
-$$3z = -6 \implies z = -2$$
-
-
-Substitute $z = -2$ into the second row:
-\[
-y + z = 0 \implies y + (-2) = 0 \implies y = 2
-\]
-
-Substitute $y = 2$ and $z = -2$ into the first row:
-\[
-5x - y + 4z = 5 \implies 5x - 2 + 4(-2) = 5 \implies 5x - 10 = 5 \implies 5x = 15 \implies x = 3
-\]
-
-
-
-$$x = 3 , y = 2 , z = -2$$
 
 \begin{lstlisting}[frame=single, basicstyle=\rmfamily, escapeinside={(*@}{@*)}]
 	(*@\makebox[\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax][c]{12/codes/q34.py}@*)
