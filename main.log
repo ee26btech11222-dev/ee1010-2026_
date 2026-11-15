@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.30)  14 NOV 2026 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2026.10.30)  15 NOV 2026 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1511,19 +1511,13 @@ Overfull \hbox (29.19977pt too wide) in paragraph at lines 83--84
 [][][][][]  
  []
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.5.1}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.169 	\end{align}
-                   [5]
+[5]
 Overfull \hbox (29.19977pt too wide) in paragraph at lines 289--290
 [][][][][]  
  []
 
 [6] [7] [8] [9] [10] [11] [12]
-<10/figs/q28.png, id=219, 454.92064pt x 183.33759pt>
+<10/figs/q28.png, id=217, 454.92064pt x 183.33759pt>
 File: 10/figs/q28.png Graphic file (type png)
 <use 10/figs/q28.png>
 Package pdftex.def Info: 10/figs/q28.png  used on input line 860.
@@ -1605,7 +1599,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.3.1}
                    \relax 
 l.92 \end{align}
                 
-<12/figs/q3.jpg, id=321, 462.528pt x 346.896pt>
+<12/figs/q3.jpg, id=318, 462.528pt x 346.896pt>
 File: 12/figs/q3.jpg Graphic file (type jpg)
 <use 12/figs/q3.jpg>
 Package pdftex.def Info: 12/figs/q3.jpg  used on input line 98.
@@ -1615,7 +1609,7 @@ Overfull \hbox (29.19977pt too wide) in paragraph at lines 102--103
 [][][][][]  
  []
 
-<12/figs/q4.jpg, id=341, 462.528pt x 346.896pt>
+<12/figs/q4.jpg, id=338, 462.528pt x 346.896pt>
 File: 12/figs/q4.jpg Graphic file (type jpg)
 <use 12/figs/q4.jpg>
 Package pdftex.def Info: 12/figs/q4.jpg  used on input line 123.
@@ -1677,7 +1671,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.18.1
                    \relax 
 l.380 \end{align}
                  
-<12/figs/q18.jpg, id=422, 462.528pt x 346.896pt>
+<12/figs/q18.jpg, id=419, 462.528pt x 346.896pt>
 File: 12/figs/q18.jpg Graphic file (type jpg)
 <use 12/figs/q18.jpg>
 Package pdftex.def Info: 12/figs/q18.jpg  used on input line 385.
@@ -1736,7 +1730,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.33.4
                    \relax 
 l.712 \end{align}
                   [29]
-<12/figs/q33.jpg, id=484, 462.528pt x 346.896pt>
+<12/figs/q33.jpg, id=481, 462.528pt x 346.896pt>
 File: 12/figs/q33.jpg Graphic file (type jpg)
 <use 12/figs/q33.jpg>
 Package pdftex.def Info: 12/figs/q33.jpg  used on input line 751.
@@ -1789,10 +1783,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 4CCA5C82B86F57AACC9BDD51731367E7;654.
  ) 
 Here is how much of TeX's memory you used:
- 54887 strings out of 467533
- 1312735 string characters out of 5422137
- 1944854 words of memory out of 5000000
- 82716 multiletter control sequences out of 15000+600000
+ 54882 strings out of 467533
+ 1312628 string characters out of 5422137
+ 1944811 words of memory out of 5000000
+ 82713 multiletter control sequences out of 15000+600000
  663157 words of font info for 109 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  99i,15n,118p,1194b,1311s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1812,10 +1806,10 @@ sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (35 pages, 908210 bytes).
+Output written on main.pdf (35 pages, 907780 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 559 compressed objects within 6 object streams
- 306 named destinations out of 1000 (max. 500000)
+ 657 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 304 named destinations out of 1000 (max. 500000)
  191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
