@@ -450,17 +450,58 @@
 	
 	%\subsection*{Step 2: Find the number of terms ($n$)}
 	Using the formula for the $n$-th term of an A.P., $a_n = a + (n - 1)d$:
-	\begin{align*}
-		-230 &= -5 + (n - 1)(-3) \\
-		-230 + 5 &= -3(n - 1) \\
-		-225 &= -3(n - 1) \\
-		n - 1 &= \frac{-225}{-3} \\
-		n - 1 &= 75 \\
-		n &= 76
-	\end{align*}
+	
+		
+	$	-230 = -5 + (n - 1)(-3) $
+		
+	$	-230 + 5 = -3(n - 1)$ 
+		
+	$	-225 = -3(n - 1) $
+		
+	$	n - 1 = \frac{-225}{-3} $ 
+		
+		$n = 76$
+		
+		Using z-transform method to find sum of k terms
+	 \begin{align}
+		\mathcal{Z}\{u[k]\} = \frac{1}{1-z^{-1}} 
+		\end{align}
+		and 
+		\begin{align}
+			\mathcal{Z}\{k\,u[k]\} = \frac{z}{(z-1)^2}
+		\end{align} the Z-transform of $x[k]$ is:
+		
+	\begin{align}
+	X(z) = \mathcal{Z}\{a\,u[k] + d\,k\,u[k]\} = \frac{a}{  1- z^{-1}} + \frac{dz^{-1}}{(1-z^{-1})^2}
+	\end{align}
+	Let $y[k] = \sum_{m=0}^{k} x[m]$ denote the partial sum up to index $k$. By the accumulation property of the Z-transform:
+	$$
+	Y(z) = \frac{z}{z - 1} X(z) = \frac{a}{(1- z^{-1})^2} + \frac{dz^2}{(z - 1)^3}
+	$$
+	
+	\begin{align}
+		\mathcal{Z}^{-1}\left\{ \frac{1}{(1-z^{-1})^2}\right\}=(k+1)u[k]
+	\end{align}
+	\begin{align}
+		\mathcal{Z}^{-1}\left\{ \frac{z^2}{(z-1)^3}\right\}=\frac{k(k+1)}{2}u[k]
+	\end{align}
+	
+	$$y[k]= \left(a(k+1) + d\frac{k(k+1)}{2}\right)u[k]$$
+	
+	Evaluating $y[k]$ at $k = N - 1 = 75$ with $a = -5$ and $d = -3$:
+	
+	$$S_N=y(N-1)= aN+ d\frac{N(N-1)}{2}$$
+	
+	$$S_{76}= Y_{75}= -5(76) + (-3)\frac{75(76)}{2}  $$
+	
+	$$S_{76}= -8930$$
+	
+	\begin{center}
+		or
+	\end{center}
 	
 	%\subsection*{Step 3: Calculate the sum of the series ($S_n$)}
-	Using the formula for the sum of an A.P., $S_n = \frac{n}{2}(a + l)$:
+	Using the formula for the sum of an A.P. $S_n = \frac{n}{2}(a + l)$:
 	\begin{align*}
 		S_{76} &= \frac{76}{2} \left[(-5) + (-230)\right] \\
 		S_{76} &= 38 \times (-235) \\
